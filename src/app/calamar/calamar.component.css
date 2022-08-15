@@ -1,0 +1,14 @@
+.frase-calamar{
+    padding-bottom: 40px;
+    border-bottom: 60px solid rgba(180, 180, 180, 0.8);
+}
+.decorator{
+    position: relative;
+    z-index: -10;
+    margin-top: -100px;
+    height: 150px;
+    /* width: 100vw; */
+    background-color: blueviolet;
+    background-color: rgba(170, 42, 255, 0.8);
+    clip-path: polygon(100% 0, 100% 43%, 100% 100%, 68% 10%, 32% 100%, 0 100%, 81% 78%);
+}

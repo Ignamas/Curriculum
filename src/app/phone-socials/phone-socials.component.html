@@ -1,0 +1,33 @@
+<div class="phone-container">
+    <div class="phone-frame">
+        <div class="display">
+            <div class="top-bar">
+                <div class="left">
+                    <div class="date">
+                        {{actual | date:'shortTime'}}
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="cuarto-circulo"></div>
+                    <div class="batery"></div>
+                </div>
+            </div>
+            <div class="camera"></div>
+            <div class="display-elements">
+               <!--  <iframe  src="https://www.facebook.com/rey.meta35/" target="_top" width="260px" height="350px"></iframe> -->
+                <div class="social-icons" *ngIf="!desplegado">
+                    <div class="icon facebook-icon"></div>
+                    <div class="icon instagram-icon"></div>
+                    <div class="icon telegram-icon"></div>
+                    <div class="icon whatsapp-icon"></div>
+                    <div class="icon gmail-icon"></div>
+                </div>
+                <div class="down-bar">
+                    <div class="down-button" (click)="openMenu()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

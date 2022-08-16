@@ -53,7 +53,10 @@ justify-content: space-around;
     display: flex;
     justify-content: flex-end ;
 }
-
+.batery-percent{
+    font-size: 12px; 
+    font-weight: 700;
+}
 .batery{
     background: linear-gradient(0deg, rgb(94, 94, 94), #fff );
     height: 12px;

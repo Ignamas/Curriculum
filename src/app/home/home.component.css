@@ -1,4 +1,13 @@
+.nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.tras{
+    height: 45px;
+}
 .home-container{
+    
     height: calc(100vh);
 }
 .image{

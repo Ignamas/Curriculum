@@ -15,13 +15,18 @@
             </div>
             <div class="camera"></div>
             <div class="display-elements">
-               <!--  <iframe  src="https://www.facebook.com/rey.meta35/" target="_top" width="260px" height="350px"></iframe> -->
+                <!--  <iframe  src="https://www.facebook.com/rey.meta35/" target="_top" width="260px" height="350px"></iframe> -->
                 <div class="social-icons" *ngIf="!desplegado">
                     <div class="icon facebook-icon"></div>
                     <div class="icon instagram-icon"></div>
                     <div class="icon telegram-icon"></div>
                     <div class="icon whatsapp-icon"></div>
                     <div class="icon gmail-icon"></div>
+                </div>
+                <div [ngClass]="desplegado?'iframe':'noIframe'" >
+                  
+                        <!-- <iframe src="https://www.google.com/ignacio" frameborder="0" width="100%" height="120%" allowfullscreen></iframe> -->
+               
                 </div>
                 <div class="down-bar">
                     <div class="down-button" (click)="openMenu()">

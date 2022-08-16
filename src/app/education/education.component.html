@@ -1,0 +1,13 @@
+<div class="cert-container">
+
+    <!-- HAY QUE ARREGLAR LO COMENTADO -->
+  <!--   <div class="check" *ngFor="let leng of lenguajes; let i = index">
+        <input type="checkbox" [name]="leng" [id]="leng" [value]="leng" />
+        <p>{{leng}}</p>
+    </div> --> 
+    <div class="cert-card" *ngFor="let cert of certificados">
+        <h3>{{cert.titulo}}</h3>
+        <img [src]="'../../assets/img/certificados/'+cert.archivo "
+            [alt]="'../../assets/img/certificados/'+cert.archivo">
+    </div>
+</div>

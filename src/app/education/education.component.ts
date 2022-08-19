@@ -8,7 +8,6 @@ import { Certificado } from './cert.interface';
 })
 export class EducationComponent implements OnInit {
   lenguajes: string[] = [];
-
   certificados: Certificado[] = [
     {
       titulo: 'Desarrollo Web con Wordpress',
@@ -17,7 +16,7 @@ export class EducationComponent implements OnInit {
       anio: 2018,
     },
     {
-      titulo: 'Certificado Programador Web',
+      titulo: 'Programador Web',
       archivo: 'Certificado Programador Web.pdf_1.jpg',
       lenguaje: ['html', 'css', 'Javascript'],
       anio: 2018,
@@ -142,8 +141,10 @@ export class EducationComponent implements OnInit {
           this.lenguajes.push(j);
         }
       }
-    }
-    console.log(this.lenguajes);
-    
+    }    
+  }
+
+  viewCert(cert: number){
+   
   }
 }

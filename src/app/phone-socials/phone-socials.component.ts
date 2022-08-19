@@ -18,6 +18,8 @@ export class PhoneSocialsComponent implements OnInit {
 
   constructor() { }
 
+  positionLeft:boolean=false
+
   ngOnInit(): void {
     const contador= interval(1000);
     contador.subscribe((n)=>{
@@ -30,5 +32,9 @@ export class PhoneSocialsComponent implements OnInit {
   openMenu(){
     this.desplegado=!this.desplegado;
   }
+  
 
+  moveLeft(){
+    this.positionLeft=!this.positionLeft
+  }
 }

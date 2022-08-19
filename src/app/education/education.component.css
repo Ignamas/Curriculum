@@ -3,14 +3,23 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
- 
+
   background-color: rgb(206, 206, 206);
   border-bottom: 46px solid rgba(116, 116, 116, 0.4);
+  padding: 80px;
 }
+
+h2 {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+
 h3 {
-    height: 10%;
-   /*  font-size: 12px; */
-   font-weight: 800;
+  height: 10%;
+  /*  font-size: 12px; */
+  font-weight: 800;
   text-overflow: ellipsis;
   text-align: center;
   width: 100%;
@@ -18,12 +27,27 @@ h3 {
   text-shadow: 0px 1px 2px rgb(173, 173, 173);
 }
 
+.card {
+  cursor: pointer;
+}
+
+.title {
+  padding: 3px;
+  background-color: aqua;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+}
+
 .cert-card {
-    margin-top: 35px;
+  margin-top: 35px;
   /*  border: 1px solid rgba(170, 42, 255, 0.8); */
   /* margin: 20px; */
   width: 400px;
-  min-width: 400PX;
+  min-width: 400px;
   height: 290px;
   box-shadow: 2px 2px 8px rgba(170, 42, 255, 0.8);
   box-shadow: 2px 2px 8px rgba(116, 116, 116, 0.8);
@@ -36,8 +60,8 @@ h3 {
 }
 
 img {
-  height: 90%;
-  width: 100%;
+  height: 255px;
+ width: 400px;
   box-shadow: 2px 2px 8px rgba(116, 116, 116, 0.8);
 
   background-size: cover;

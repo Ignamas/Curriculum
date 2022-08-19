@@ -11,6 +11,7 @@ import { PhoneSocialsComponent } from './phone-socials/phone-socials.component';
 import { FixedImageComponent } from './fixed-image/fixed-image.component';
 import { EducationComponent } from './education/education.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CertViewComponent } from './education/cert-view/cert-view.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PhoneSocialsComponent,
     FixedImageComponent,
     EducationComponent,
+    CertViewComponent,
   ],
   imports: [
     BrowserModule,

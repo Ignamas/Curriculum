@@ -1,0 +1,41 @@
+
+.flex-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(99, 7, 160, 0.8);
+    color: #dedede;
+    height: 55px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.button{
+    padding: 5px;
+    width: 130px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgba(210, 182, 229, 0.8);
+    color: #222;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 105px);
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+width: 53%;
+/* border: 1px solid rgb(4, 139, 230); */
+box-shadow: 0px 0px 15px rgb(13, 39, 56);
+}

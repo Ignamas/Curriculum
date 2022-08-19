@@ -1,13 +1,16 @@
-<div class="cert-container">
-
+<div class="cert-container"  [id]="'education'">
+    <h2>Formación</h2>
     <!-- HAY QUE ARREGLAR LO COMENTADO -->
   <!--   <div class="check" *ngFor="let leng of lenguajes; let i = index">
         <input type="checkbox" [name]="leng" [id]="leng" [value]="leng" />
         <p>{{leng}}</p>
     </div> --> 
-    <div class="cert-card" *ngFor="let cert of certificados">
-        <h3>{{cert.titulo}}</h3>
+    <div class="cert-card" *ngFor="let cert of certificados; let i = index"  >
+        <div class="card" (click)="viewCert(i)" [routerLink]="'cert/'+ cert.archivo" [id]="'#'+cert.archivo">
+        <h3 >{{cert.titulo}}</h3>
+        
         <img [src]="'../../assets/img/certificados/'+cert.archivo "
-            [alt]="'../../assets/img/certificados/'+cert.archivo">
+            [alt]="'../../assets/img/certificados/'+cert.archivo" >
+        </div>
     </div>
 </div>

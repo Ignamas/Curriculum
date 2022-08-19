@@ -18,11 +18,11 @@
             <div class="display-elements">
                 <!--  <iframe  src="https://www.facebook.com/rey.meta35/" target="_top" width="260px" height="350px"></iframe> -->
                 <div class="social-icons" *ngIf="!desplegado">
-                    <div class="icon facebook-icon" (click)="moveLeft()"></div>
-                    <div class="icon instagram-icon" (click)="moveLeft()"></div>
-                    <div class="icon telegram-icon"></div>
-                    <div class="icon whatsapp-icon"></div>
-                    <div class="icon gmail-icon"></div>
+                    <div class="icon facebook-icon"  (click)="moveLeft('face')"></div>
+                    <div class="icon instagram-icon" (click)="moveLeft('insta')"></div>
+                    <div class="icon telegram-icon"  (click)="moveLeft('tele')"></div>
+                    <div class="icon whatsapp-icon" (click)="moveLeft('what')"></div>
+                    <div class="icon gmail-icon"  (click)="moveLeft('mail')"></div>
                 </div>
                 <div [ngClass]="desplegado?'iframe':'noIframe no-display'" >
                     <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1431.8473060418557!2d-58.068298982923515!3d-31.3996306679558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95ade8093e560701%3A0x5d1d34b223a6f091!2sConcordia%2C%20Entre%20R%C3%ADos!3m2!1d-31.391392099999997!2d-58.017433999999994!5e0!3m2!1ses!2sar!4v1660785128095!5m2!1ses!2sar" width="260" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -38,5 +38,12 @@
         </div>
     </div>
 
-    <div [ngClass]="positionLeft ? 'sn':'nsn'"></div>
+    <div [ngClass]="positionLeft ? 'sn':'nsn'">
+        <div class="flex">
+        <div [ngClass]="positionLeft?'close':''">
+        </div>
+        <img src="../../assets/img/facebook.jpg" alt="" class="imagen">
+        <div [ngClass]="positionLeft?'close-button':'noClose' " (click)="this.positionLeft=!positionLeft">Cerrar</div>
+    </div>
+    </div>
 </div>

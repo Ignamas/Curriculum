@@ -17,7 +17,7 @@ export class PhoneSocialsComponent implements OnInit {
 
 
   constructor() { }
-
+  selected:string='face'
   positionLeft:boolean=false
 
   ngOnInit(): void {
@@ -34,7 +34,12 @@ export class PhoneSocialsComponent implements OnInit {
   }
   
 
-  moveLeft(){
+  moveLeft(ev: string){
+
+    console.log(ev)
+    if(!this.positionLeft){
     this.positionLeft=!this.positionLeft
+    }
+   
   }
 }

@@ -1,0 +1,52 @@
+.experience-container {
+  /*  background-color: rgb(206, 206, 206);
+    border-bottom: 46px solid rgba(116, 116, 116, 0.4); */
+  padding-top: 80px;
+  height: auto;
+  margin-bottom: 150px;
+}
+
+.about-me-resume {
+  /*   width: 100vw;
+    margin-top: 80px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.escrito {
+  width: 45vw;
+  min-width: 350px;
+}
+
+.subtitle {
+  margin-top: 15px;
+}
+
+.resumen {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.dream {
+  /* width: 350px; */
+  width: 405px;
+  height: 284px;
+  /*   min-width: 220px;
+    min-height: 290px; */
+  background-image: url("../../assets/img/miniyo.png");
+
+  background-size: cover;
+}
+
+.divisor{
+    width: 98vw;
+    height: 120px;
+    background-color: rgba(170, 42, 255, 0.8);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    clip-path: polygon(100% 0, 19% 23%, 0 60%, 0 0);
+}

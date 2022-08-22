@@ -7,7 +7,16 @@
 }
 
 html {
+
     scroll-behavior: smooth;
    /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
    para probar la diferencia con y sin scroll suavizado*/
 }
+
+
+h2 {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+  }

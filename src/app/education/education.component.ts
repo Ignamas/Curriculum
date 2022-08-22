@@ -8,6 +8,7 @@ import { Certificado } from './cert.interface';
 })
 export class EducationComponent implements OnInit {
   lenguajes: string[] = [];
+  lenguajeSeleccionado:string=''
   certificados: Certificado[] = [
     {
       titulo: 'Desarrollo Web con Wordpress',
@@ -18,7 +19,7 @@ export class EducationComponent implements OnInit {
     {
       titulo: 'Programador Web',
       archivo: 'Certificado Programador Web.pdf_1.jpg',
-      lenguaje: ['html', 'css', 'Javascript'],
+      lenguaje: ['html', 'css', 'javascript'],
       anio: 2018,
     },
     {
@@ -130,6 +131,8 @@ export class EducationComponent implements OnInit {
     },
   ];
 
+  certificadosVisbles:Certificado[]=[]
+
   constructor() {}
 
   ngOnInit(): void {
@@ -141,10 +144,26 @@ export class EducationComponent implements OnInit {
           this.lenguajes.push(j);
         }
       }
-    }    
+    } 
+    this.lenguajes.sort()   
   }
 
-  viewCert(cert: number){
-   
+  viewCert(cert: string){
+    this.certificadosVisbles=[]
+    this.lenguajeSeleccionado=cert
+    if (cert!='todos'){
+    this.certificados.forEach(element => {
+      if (element.lenguaje.includes(cert)){
+      
+        this.certificadosVisbles.push(element)
+        console.log(element);
+        console.log(this.certificadosVisbles);
+        
+        
+      }
+    });
+  }else{
+    this.certificadosVisbles=this.certificados
+  }
   }
 }

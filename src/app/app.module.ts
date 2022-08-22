@@ -12,6 +12,7 @@ import { FixedImageComponent } from './fixed-image/fixed-image.component';
 import { EducationComponent } from './education/education.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CertViewComponent } from './education/cert-view/cert-view.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CertViewComponent } from './education/cert-view/cert-view.component';
     FixedImageComponent,
     EducationComponent,
     CertViewComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,

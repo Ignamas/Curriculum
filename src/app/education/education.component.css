@@ -27,6 +27,15 @@ h3 {
   text-shadow: 0px 1px 2px rgb(173, 173, 173);
 }
 
+.flex-names{
+  display: flex;
+  width: 90vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+}
+
 .card {
   cursor: pointer;
 }
@@ -36,6 +45,26 @@ h3 {
   background-color: aqua;
 }
 
+.select-languaje{
+  cursor: pointer;
+  /* color: #222; */
+  border: 1px solid rgb(128, 128, 128);
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  
+  background-color: #c583e4;
+  
+  
+  
+}
+.select-languaje:hover{
+  background-color: rgba(170, 42, 255, 0.8);
+box-shadow: #dddddd 1px 2px 5px;
+border-radius: 6px;
+}
 .card-title {
   font-size: 18px;
   font-weight: 400;

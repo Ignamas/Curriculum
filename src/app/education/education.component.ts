@@ -156,8 +156,8 @@ export class EducationComponent implements OnInit {
       if (element.lenguaje.includes(cert)){
       
         this.certificadosVisbles.push(element)
-        console.log(element);
-        console.log(this.certificadosVisbles);
+    /*     console.log(element);
+        console.log(this.certificadosVisbles); */
         
         
       }

@@ -13,6 +13,7 @@ import { EducationComponent } from './education/education.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CertViewComponent } from './education/cert-view/cert-view.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ExperienceComponent } from './experience/experience.component';
     EducationComponent,
     CertViewComponent,
     ExperienceComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.body.classList.toggle('dark')
   }
 
   progress:number=0
@@ -23,4 +24,10 @@ export class NavbarComponent implements OnInit {
      console.log(this.progress); 
   }
 
+
+  toggleDarkTheme(): void {
+    console.log("ejecutado");
+    
+    document.body.classList.toggle('dark-theme');
+ }
 }

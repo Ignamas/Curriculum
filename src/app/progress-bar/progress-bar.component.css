@@ -6,6 +6,7 @@
 
 .progress-bar{
    /*  width: 0%; */
+   max-width: 99vw;
     height: 100%;
     background-color: blueviolet;
     background-color: rgba(170, 42, 255, 0.8);

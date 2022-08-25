@@ -2,16 +2,17 @@
 /* width: 100vw; */
 height: 50px;
 border-bottom: 2px solid #eeeeee;
-background-color: #fefefe;
+background-color: rgba(254, 254, 254,0.6);
 display: flex;
 justify-content: space-between;
 padding-left: 30px;
 padding-right: 30px;
 align-items: center;
 flex-wrap: wrap;
+backdrop-filter: blur(3px);
+
 /* transition: .6s height, .6s background-color; */
 }
-
 .me{
     padding: 5px;
     border-radius: 4px;

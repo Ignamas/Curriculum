@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Container } from '@angular/compiler/src/i18n/i18n_ast';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
+    document.body.classList.toggle('dark')
   }
 
+  progress:number=0
+
+  @HostListener('window:scroll', ['$event']) // for window scroll events
+  onScroll(event :Event) {
+    
+    this.progress= (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100)
+     console.log(this.progress); 
+  }
+
+
+  toggleDarkTheme(): void {
+    console.log("ejecutado");
+    
+    document.body.classList.toggle('dark-theme');
+ }
 }

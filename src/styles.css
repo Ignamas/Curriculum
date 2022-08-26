@@ -28,10 +28,16 @@ body {
     color: #eee;
     transition: all 0.5s;
   }
+
+  cert-container-dark-theme{
+    background-color: rgb(104, 104, 104);
+  }
   
   body {
     background: var(--bkg-color);
   }
+
+ 
   
   h1,
   p {

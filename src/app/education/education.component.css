@@ -2,12 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: center;
+  justify-content: space-around;
 
   background-color: rgb(206, 206, 206);
   border-bottom: 46px solid rgba(116, 116, 116, 0.4);
   padding: 80px;
+  color: #333;
 }
+
+
 
 h2 {
   font-size: 36px;

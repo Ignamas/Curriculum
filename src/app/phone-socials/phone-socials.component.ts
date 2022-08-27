@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
-
+import { DomSanitizer } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-phone-socials',
@@ -10,13 +10,16 @@ import { interval } from 'rxjs';
 export class PhoneSocialsComponent implements OnInit {
   actual:Date=new Date();
   desplegado:boolean=false;
+  /* apiBaseURL = Config.API_SERVER_URL; */
+  public urlIframe:string = 'https://www.linkedin.com/in/ignacio-mascali/';
+  public id:string | undefined;
+ constructor(private sanitizer: DomSanitizer) { }
+
 /*  
   
   horas: number =  Math.floor(this.actual%(24*60*60*1000)/3.6e+6);
   minutos: number=Math.floor(((this.diferencia%(24*60*60*1000)/3.6e+6)%this.horas)*(60)); */
 
-
-  constructor() { }
   selected:string='face'
   positionLeft:boolean=false
 
@@ -27,6 +30,12 @@ export class PhoneSocialsComponent implements OnInit {
         this.actual=new Date();
       })
 
+  }
+
+  getembenurl()
+  {
+
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.urlIframe);
   }
 
   openMenu(){

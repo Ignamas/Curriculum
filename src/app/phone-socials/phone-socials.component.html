@@ -17,7 +17,7 @@
             <div class="camera"></div>
             <div class="display-elements">
                 <div class="social-icons" *ngIf="!desplegado">
-                    <div class="icon facebook-icon"  (click)="moveLeft('face')"></div>
+                    <div class="icon linkedin-icon"  (click)="moveLeft('linked')"></div>
                     <div class="icon instagram-icon" (click)="moveLeft('insta')"></div>
                     <div class="icon telegram-icon"  (click)="moveLeft('tele')"></div>
                     <div class="icon whatsapp-icon" (click)="moveLeft('what')"></div>
@@ -38,7 +38,8 @@
         <div class="flex">
         <div [ngClass]="positionLeft?'close':''">
         </div>
-        <img src="../../assets/img/facebook.jpg" alt="" class="imagen">
+       <!--  <img src="../../assets/img/facebook.jpg" alt="" class="imagen"> -->
+       <iframe [src]="getembenurl()" class="embed-responsive-item" frameborder="0"></iframe>
         <div [ngClass]="positionLeft?'close-button':'noClose' " (click)="this.positionLeft=!positionLeft">Cerrar</div>
     </div>
     </div>

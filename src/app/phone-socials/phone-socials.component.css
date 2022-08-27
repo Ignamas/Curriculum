@@ -173,8 +173,8 @@ justify-content: space-around;
      cursor: pointer;
 }
 
-.facebook-icon{
-    background-image: url('../../assets/img/Antu_facebook.svg.png');
+.linkedin-icon{
+    background-image: url('../../assets/img/linkedin.png');
     background-position: center;
     background-size: cover;
 }

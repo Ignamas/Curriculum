@@ -65,7 +65,7 @@ export class PhoneSocialsComponent implements OnInit {
     } */
 
     if( ev != ''){
-      console.log(ev);
+  /*     console.log(ev); */
       
       this.positionLeft = true
       this.imgSocial=ev

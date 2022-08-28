@@ -22,12 +22,12 @@ export class NavbarComponent implements OnInit {
   onScroll(event :Event) {
     
     this.progress= (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100)
-     console.log(this.progress); 
+/*      console.log(this.progress);  */
   }
 
 
   toggleDarkTheme(): void {
-    console.log("ejecutado");
+/*     console.log("ejecutado"); */
     
     document.body.classList.toggle('dark-theme');
  }

@@ -35,12 +35,14 @@
     </div>
 
     <div [ngClass]="positionLeft ? 'sn':'nsn'">
-        <div class="flex">
-        <div [ngClass]="positionLeft?'close':''">
-        </div>
-       <!--  <img src="../../assets/img/facebook.jpg" alt="" class="imagen"> -->
-       <iframe [src]="getembenurl()" class="embed-responsive-item" frameborder="0"></iframe>
-        <div [ngClass]="positionLeft?'close-button':'noClose' " (click)="this.positionLeft=!positionLeft">Cerrar</div>
+        <div class="flex-frame">
+            <div [ngClass]="positionLeft?'close':''">
+            </div>
+            <div class="social-img" [ngClass]="positionLeft?imgSocial:''"></div>
+    <div class="buttons-links">
+        <a [href]="irSitio" target="_blank"><div [ngClass]="positionLeft?'gotoWeb':'noClose'">Ir al sitio </div></a>
+        <div [ngClass]="positionLeft?'close-button':'noClose' " (click)="this.moveLeft('')">Cerrar</div>
+    </div>
     </div>
     </div>
 </div>

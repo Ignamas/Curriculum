@@ -1,8 +1,8 @@
 <div class="nav-container">
     <a href="#header">
         <div class="me">
-    <h3>Ignacio Mascali</h3>
-</div>
+            <h3>Ignacio Mascali</h3>
+        </div>
     </a>
     <nav class="flex-items">
         <a href="#education">
@@ -11,23 +11,24 @@
             </div>
         </a>
         <a href="#resumen">
-        <div class="item">
-            Sobre mi
-        </div>
+            <div class="item">
+                Sobre mi
+            </div>
         </a>
-        <div class="item">
-            Portafolio
+        <a routerLink="/curriculum">
+            <div class="item">
+                Curriculum
+            </div>
+        </a>
+        <a href="#contact">
+            <div class="item">
+                Contacto
+            </div>
+        </a>
+        <div class="switch-container">
+            <input type="checkbox" id="switch" (click)="toggleDarkTheme()">
+            <label for="switch" class="lbl"></label>
         </div>
-<a href="#contact">
-        <div class="item">
-            Contacto
-        </div>
-    </a>
-    <div class="switch-container">
-    <input type="checkbox" id="switch" (click)="toggleDarkTheme()" >
-        <label for="switch" class="lbl"></label>
-</div>
-</nav>
+    </nav>
 </div>
 <app-progress-bar></app-progress-bar>
-

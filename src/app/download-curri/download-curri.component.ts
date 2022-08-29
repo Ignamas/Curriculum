@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { Certificado } from './cert.interface';
+import { Component, Input, OnInit } from '@angular/core';
+import { Certificado } from '../education/cert.interface';
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css'],
+  selector: 'app-download-curri',
+  templateUrl: './download-curri.component.html',
+  styleUrls: ['./download-curri.component.css'],
 })
-export class EducationComponent implements OnInit {
-  lenguajes: string[] = [];
-  lenguajeSeleccionado:string=''
+export class DownloadCurriComponent implements OnInit {
+  odenadosPorAnio: Certificado[] = [];
+  checked:boolean[]=[]
   certificados: Certificado[] = [
     {
       titulo: 'Desarrollo Web con Wordpress',
@@ -168,35 +168,16 @@ export class EducationComponent implements OnInit {
       imprimir:true
     },
   ];
-  certificadosVisbles:Certificado[]=[]
 
   constructor() {}
 
   ngOnInit(): void {
-    for (let i of this.certificados) {
-      
-      for (let j of i.lenguaje) {
-        if (this.lenguajes.includes(j)) {
-        } else {
-          this.lenguajes.push(j);
-        }
-      }
-    } 
-    this.lenguajes.sort()   
+ 
   }
 
-  viewCert(cert: string){
-    this.certificadosVisbles=[]
-    this.lenguajeSeleccionado=cert
-    if (cert!='todos'){
-    this.certificados.forEach(element => {
-      if (element.lenguaje.includes(cert)){
-      
-        this.certificadosVisbles.push(element)
-      }
-    });
-  }else{
-    this.certificadosVisbles=this.certificados
+  printPage() {
+    window.print()
   }
-  }
+
+
 }

@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CertViewComponent } from './education/cert-view/cert-view.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { DownloadCurriComponent } from './download-curri/download-curri.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     CertViewComponent,
     ExperienceComponent,
     ProgressBarComponent,
+    DownloadCurriComponent,
   ],
   imports: [
     BrowserModule,

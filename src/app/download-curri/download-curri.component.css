@@ -13,7 +13,23 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.contacto {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 30%;
+  height: 550px;
+  background-color: rgba(170, 42, 255, 1);
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 6px;
+  font-size: 14px;
+
 }
 
 .white {
@@ -216,10 +232,11 @@ padding-left: 50px;
     height: 550px;
     background-color: rgba(170, 42, 255, 1);
     color: #fff;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 6px;
     font-size: 14px;
+
   }
   .cert-tec {
     width: 33%;
@@ -235,16 +252,31 @@ padding-left: 50px;
   .texto {
     width: 100%;
     text-align: justify;
-    font-size: 18px;
+    
+    font-size: 14px;
     background-color: #fff;
     font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
   }
   .back-text {
-    width: 60%;
+    width: 65%;
     height: auto;
-    background-color: rgba(255, 255, 255, 1);
-    display: inline;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+ 
+
   }
+  .white {
+    border-top: 1px solid #fff;
+    width: 100%;
+    /* margin: 8px; */
+    text-align: center;
+    font-size: 13px;
+    color: inherit;
+  }
+
   .cert-cursos{
     color: #000;
   }

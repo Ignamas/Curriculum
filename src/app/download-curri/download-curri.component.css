@@ -13,23 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
-  justify-content: space-between;
-}
-
-.contacto {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 30%;
-  height: 550px;
-  background-color: rgba(170, 42, 255, 1);
-  color: #fff;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 6px;
-  font-size: 14px;
-
+  justify-content: center;
 }
 
 .white {
@@ -108,6 +92,7 @@ p:first-letter {
   background-color: rgba(170, 42, 255, 0.5);
   border-radius: 6px;
   margin-left: 15%;
+  padding: 15px;
 }
 
 .realizados {
@@ -232,16 +217,16 @@ padding-left: 50px;
     height: 550px;
     background-color: rgba(170, 42, 255, 1);
     color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
     border-radius: 6px;
     font-size: 14px;
-
   }
   .cert-tec {
     width: 33%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .tec-title{
@@ -252,32 +237,23 @@ padding-left: 50px;
   .texto {
     width: 100%;
     text-align: justify;
-    
-    font-size: 14px;
+    font-size: 18px;
     background-color: #fff;
     font-weight: 400;
-    display: flex;
-    flex-wrap: wrap;
   }
   .back-text {
-    width: 65%;
+    width: 60%;
     height: auto;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
- 
-
+    background-color: rgba(255, 255, 255, 1);
+    display: inline;
   }
-  .white {
-    border-top: 1px solid #fff;
-    width: 100%;
-    /* margin: 8px; */
-    text-align: center;
-    font-size: 13px;
-    color: inherit;
-  }
-
   .cert-cursos{
     color: #000;
+  }
+  
+  .tecnico{
+    margin: 30px;
+  text-align: center;
+   min-width: 250px;
   }
 }

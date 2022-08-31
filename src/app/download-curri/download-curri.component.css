@@ -50,16 +50,25 @@ p:first-letter {
   margin-left: 25px;
 }
 
+.blocky{
+  width: 25vw;
+}
+
 .education {
+  margin: auto;
   margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 50px;
+  gap: 50px;
 }
 
 .cert-tec {
-  width: 25%;
+  width: 25vw;
+ display: flex;
+ justify-content: center;
+  margin-top: 0 ;
 }
 
 .cert-cursos {
@@ -67,6 +76,7 @@ p:first-letter {
 }
 
 .cert {
+  margin: auto;
   margin-bottom: 5px;
   border-bottom: 1px solid #ccc;
   padding: 4px;
@@ -80,13 +90,15 @@ p:first-letter {
   margin-bottom: 30px;
   background-color: rgb(218, 196, 238);
   background-color: rgba(170, 42, 255, 0.5);
+  border-radius: 6px;
+  margin-left: 15%;
 }
 
 .realizados {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  max-width: 650px;
+  max-width: 750px;
 }
 
 .check {
@@ -136,6 +148,43 @@ p:first-letter {
   border: 1px solid rgba(170, 42, 255, 0.8);
 }
 
+.exp-title{
+margin-top: 80px;
+margin-bottom: 40px;
+width: 100%;
+padding-left: 50px;
+}
+
+.experiences{
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.job{
+  cursor: default;
+  width: 45%;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #ccc;
+  color: #222;
+}
+
+.actual{
+  background-color: #75ce76;
+}
+
+
+
+
+
+
+
+
+
+
 @media print {
     ::ng-deep .dark-theme {
        background-color: #fff !important    ;
@@ -174,7 +223,15 @@ p:first-letter {
   }
   .cert-tec {
     width: 33%;
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  .tec-title{
+ width: 100%;
+  }
+
+  
   .texto {
     width: 100%;
     text-align: justify;

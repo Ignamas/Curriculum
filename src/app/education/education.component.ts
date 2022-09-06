@@ -166,6 +166,13 @@ export class EducationComponent implements OnInit {
       expedidaPor: 'Udemy',
       anio: 2022,
       imprimir:true
+    },{
+      titulo: 'Angular - De cero a experto',
+      archivo: 'Certificado-Angular-De-Cero-A-Experto.jpg',
+      lenguaje: ['angular'],
+      expedidaPor: 'Udemy',
+      anio: 2022,
+      imprimir:true
     },
   ];
   certificadosVisbles:Certificado[]=[]

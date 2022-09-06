@@ -142,8 +142,8 @@ export class DownloadCurriComponent implements OnInit {
     {
       titulo: 'Crea una app del clima con Angular',
       archivo: 'Crea-una-app-del-clima-con-Angular.pdf_1.jpg',
-      lenguaje: ['angular'],
-      expedidaPor: 'Código facilito',
+      lenguaje: ['angular','node'],
+      expedidaPor: 'Udemy',
       anio: 2022,
       imprimir:true
     },
@@ -167,6 +167,13 @@ export class DownloadCurriComponent implements OnInit {
       titulo: 'Golang - Curso profesional de Go de cero a Master',
       archivo: 'Golang-Curso-profesional-de-Go-De-cero-a-Master-2022.pdf_1.jpg',
       lenguaje: ['golang'],
+      expedidaPor: 'Udemy',
+      anio: 2022,
+      imprimir:true
+    },{
+      titulo: 'Angular - De cero a experto',
+      archivo: 'Certificado-Angular-De-Cero-A-Experto.jpg',
+      lenguaje: ['angular'],
       expedidaPor: 'Udemy',
       anio: 2022,
       imprimir:true

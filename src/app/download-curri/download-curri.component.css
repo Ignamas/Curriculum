@@ -190,28 +190,44 @@ p:first-letter {
   text-align: center;
 }
 
+@media (max-width: 505px) {
+  .print-container {
+    position: fixed;
+    top: 110px;
+  }
+}
 
+@media (max-width: 610px) {
+  .job {
+    width: 100%;
+    flex-direction: column;
 
+  }
+    .education{
+   display: flex;
+   flex-direction: column;   
+   width: 100vw;
 
+  }
+.cert-tec{
+  display: block;
 
-
-
-
-
-
-
-
-
-
+  width: 88vw;
+}
+.cert{
+  width: 88vw;
+}
+  
+}
 
 @media print {
   ::ng-deep .dark-theme {
     background-color: #fff !important    ;
   }
 
-.curri-container{
-  padding: 5px;
-}
+  .curri-container {
+    padding: 5px;
+  }
 
   .no-imprimir {
     display: none;
@@ -241,13 +257,13 @@ p:first-letter {
     height: 550px;
     background-color: rgba(170, 42, 255, 1);
     color: #fff;
-   /*  margin-left: 40px;
+    /*  margin-left: 40px;
     margin-right: 40px; */
     border-radius: 6px;
     font-size: 11px;
   }
 
-  .contacto>p{
+  .contacto > p {
     font-size: 13px;
   }
 
@@ -272,26 +288,23 @@ p:first-letter {
     gap: 10px;
   }
 
-
   /* --------------------------------------*/
-  .print-flex {
-  }
+
   .education {
     display: flex;
     justify-content: center;
     width: 100vw;
     margin-top: 50px;
   }
-.certif{
-  font-size: 12px;
-}
+  .certif {
+    font-size: 12px;
+  }
 
-
-.cert-tec {
- font-size: 13px;
- padding: 5px;
- width: 215px;
-}
+  .cert-tec {
+    font-size: 13px;
+    padding: 5px;
+    width: 215px;
+  }
 
   /* .tec-title{
     width: 100%;
@@ -308,7 +321,7 @@ p:first-letter {
     width: 100vw;
 
   } */
-  .me > p{
+  .me > p {
     font-size: 11px;
   }
   .texto {
@@ -326,11 +339,10 @@ p:first-letter {
     font-size: 12px;
   }
 
-
   .cert-cursos {
     color: #000;
   }
-  .div-contacto{
+  .div-contacto {
     display: flex;
     width: 100%;
     font-size: 14px;

@@ -9,6 +9,10 @@ import { Certificado } from '../education/cert.interface';
 export class DownloadCurriComponent implements OnInit {
   odenadosPorAnio: Certificado[] = [];
   checked:boolean[]=[]
+  job1:boolean=false
+  job2:boolean=false
+  job3:boolean=false
+  job4:boolean=false
   certificados: Certificado[] = [
     {
       titulo: 'Desarrollo Web con Wordpress',
@@ -179,5 +183,15 @@ export class DownloadCurriComponent implements OnInit {
     window.print()
   }
 
-
+  despligajob(ev:string){
+    if (ev == "job1") {
+      this.job1=!this.job1
+    }else if (ev == "job2") {
+      this.job2=!this.job2
+    }else if (ev == "job3") {
+      this.job3=!this.job3
+    }else if (ev == "job4") {
+      this.job4=!this.job4
+    }
+  }
 }
